@@ -39,7 +39,7 @@ document.querySelectorAll('[data-artwork]').forEach((button) => {
     const sourceImage = button.querySelector('img');
     artDialogImage.src = sourceImage.src;
     artDialogImage.alt = sourceImage.alt;
-    artDialogTitle.textContent = `${button.dataset.artwork} · Œuvre fictive`;
+    artDialogTitle.textContent = `${button.dataset.artwork} · Attribution à confirmer`;
     artDialog.showModal();
     document.body.classList.add('dialog-open');
   });

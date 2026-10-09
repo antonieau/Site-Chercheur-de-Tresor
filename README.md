@@ -17,6 +17,7 @@ Puis ouvrez `http://localhost:4173`.
 - Textes, titres et informations des œuvres : `dist/index.html`
 - Couleurs, typographies et mise en page : `dist/styles.css`
 - Interactions et comportement du formulaire : `dist/script.js`
-- Images de démonstration : `dist/assets/oeuvre-01.svg` à `oeuvre-06.svg`
+- Images actuellement sélectionnées : `dist/assets/collection/`
+- Images sources disponibles : `images-arts/`
 
 Pour remplacer une œuvre, conservez le même nom de fichier ou modifiez son chemin `src` dans `dist/index.html`.
