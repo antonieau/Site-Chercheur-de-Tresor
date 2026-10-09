@@ -137,7 +137,7 @@ h1 { margin: 0; font-size: clamp(3.4rem, 6.2vw, 7.7rem); }
 .art-card:nth-child(4n + 3) { margin-top: 3vw; }
 .art-card:nth-child(4n + 4) { grid-column: 2 / span 5; }
 .art-image { display: block; position: relative; width: 100%; border: 0; padding: 0; background: var(--paper); cursor: zoom-in; overflow: hidden; }
-.art-image img { aspect-ratio: 4 / 5; object-fit: cover; transition: transform 550ms cubic-bezier(.2,.65,.3,1); }
+.art-image img { aspect-ratio: 4 / 5; object-fit: contain; background: #d8d0c4; transition: transform 550ms cubic-bezier(.2,.65,.3,1); }
 .art-card:nth-child(3n) .art-image img { aspect-ratio: 6 / 5; }
 .art-image:hover img, .art-image:focus-visible img { transform: scale(1.025); }
 .view-mark {
