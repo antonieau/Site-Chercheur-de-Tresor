@@ -110,8 +110,8 @@ h1 { margin: 0; font-size: clamp(3.4rem, 6.2vw, 7.7rem); }
 }
 .text-link span { transition: transform 180ms ease; }
 .text-link:hover span, .text-link:focus-visible span { transform: translate(0.25rem, 0.25rem); }
-.hero-visual { margin: 0; align-self: stretch; min-height: 650px; position: relative; overflow: hidden; }
-.hero-visual img { width: 100%; height: 100%; object-fit: cover; transition: transform 700ms cubic-bezier(.2,.65,.3,1); }
+.hero-visual { background: #d8d0c4; margin: 0; align-self: stretch; min-height: 650px; position: relative; overflow: hidden; }
+.hero-visual img { width: 100%; height: 100%; object-fit: contain; background: #2b1717; transition: transform 700ms cubic-bezier(.2,.65,.3,1); }
 .hero-visual:hover img { transform: scale(1.018); }
 .hero-visual figcaption {
   position: absolute;
