@@ -15,14 +15,14 @@ Puis ouvrez `http://127.0.0.1:4173`.
 ## Pages
 
 - `dist/index.html` : accueil, sélection de six œuvres, présentation du projet et contact ;
-- `dist/galerie.html` : galerie complète avec visionneuse et navigation au clavier ;
+- `dist/galerie/index.html` : galerie complète avec visionneuse et navigation au clavier, accessible à l’adresse `/galerie/` ;
 - `dist/a-propos/index.html` : présentation personnelle et portrait, accessible à l’adresse `/a-propos/` ;
 - `dist/styles.css` : styles communs et mises en page responsive ;
 - `dist/script.js` : menu mobile, animations, visionneuses et formulaire de démonstration.
 
 ## Ajouter des photographies
 
-Les originaux restent dans `images-arts/`. Le serveur ne publie que `dist/`, il faut donc copier chaque photographie destinée au site dans `dist/assets/images-arts/`, puis ajouter son élément `<figure>` dans `dist/galerie.html` avec :
+Les originaux restent dans `images-arts/`. Le serveur ne publie que `dist/`, il faut donc copier chaque photographie destinée au site dans `dist/assets/images-arts/`, puis ajouter son élément `<figure>` dans `dist/galerie/index.html` avec :
 
 - une légende descriptive sans attribution non vérifiée ;
 - un texte alternatif précis ;
