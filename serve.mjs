@@ -20,7 +20,11 @@ const types = {
 createServer((request, response) => {
   const requestedPath = decodeURIComponent(new URL(request.url, 'http://localhost').pathname);
   const relativePath = requestedPath === '/' ? 'index.html' : requestedPath.replace(/^\/+/, '');
-  const filePath = normalize(join(root, relativePath));
+  let filePath = normalize(join(root, relativePath));
+
+  if (filePath.startsWith(root) && existsSync(filePath) && statSync(filePath).isDirectory()) {
+    filePath = join(filePath, 'index.html');
+  }
 
   if (!filePath.startsWith(root) || !existsSync(filePath) || !statSync(filePath).isFile()) {
     response.writeHead(404, { 'Content-Type': 'text/plain; charset=utf-8' });
