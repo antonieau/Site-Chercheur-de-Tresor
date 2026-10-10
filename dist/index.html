@@ -3,178 +3,120 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="description" content="Galerie [Nom] — une sélection d’œuvres contemporaines pour les intérieurs d’exception.">
+  <meta name="description" content="Chercheur de Trésor partage une sélection d’œuvres, d’objets et de détails remarquables, à la rencontre de l’art et du patrimoine bâti.">
   <meta name="theme-color" content="#f4f0e8">
-  <title>Galerie [Nom] — Art contemporain</title>
+  <title>Chercheur de Trésor — Art et patrimoine</title>
   <link rel="stylesheet" href="styles.css">
   <script src="script.js" defer></script>
 </head>
 <body>
   <a class="skip-link" href="#contenu">Aller au contenu</a>
-
   <header class="site-header" data-header>
-    <a class="brand" href="#accueil" aria-label="Galerie Nom, accueil">
-      <span>Galerie</span>
-      <strong>[Nom]</strong>
+    <a class="brand" href="index.html" aria-label="Chercheur de Trésor, accueil">
+      <span class="brand-mark" aria-hidden="true">CT</span>
+      <span class="brand-name">Chercheur <strong>de Trésor</strong></span>
     </a>
-
     <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="navigation">
-      <span class="sr-only">Ouvrir le menu</span>
-      <span></span><span></span>
+      <span class="sr-only">Ouvrir le menu</span><span></span><span></span>
     </button>
-
     <nav id="navigation" class="navigation" aria-label="Navigation principale">
-      <a href="#collection">La sélection</a>
-      <a href="#galerie">La galerie</a>
-      <a href="#contact" class="nav-cta">Nous contacter</a>
+      <a href="index.html" aria-current="page">Accueil</a>
+      <a href="galerie.html">Galerie</a>
+      <a href="a-propos.html">À propos de moi</a>
+      <a href="index.html#contact" class="nav-cta">Contact</a>
     </nav>
   </header>
 
   <main id="contenu">
-    <section class="hero" id="accueil" aria-labelledby="hero-title">
+    <section class="hero" aria-labelledby="hero-title">
       <div class="hero-copy reveal">
-        <p class="eyebrow">Art contemporain · Paris</p>
-        <h1 id="hero-title">Des œuvres singulières pour des lieux d’exception</h1>
-        <p class="hero-intro">Une sélection confidentielle de pièces contemporaines, choisies pour leur présence, leur matière et l’émotion qu’elles installent dans un espace.</p>
-        <a class="text-link" href="#collection">Découvrir la sélection <span aria-hidden="true">↘</span></a>
+        <p class="eyebrow">Art · objets · patrimoine bâti</p>
+        <h1 id="hero-title">Regarder autrement ce qui traverse le temps.</h1>
+        <p class="hero-intro">Chercheur de Trésor est un carnet de découvertes guidé par la matière, les savoir-faire et les histoires silencieuses que portent les œuvres et les lieux.</p>
+        <a class="text-link" href="#selection">Découvrir la sélection <span aria-hidden="true">↘</span></a>
       </div>
       <figure class="hero-visual reveal">
         <img src="assets/collection/figures-oniriques-2026.jpg" alt="Composition encadrée aux figures surréalistes élancées dans des tons de bleu et de beige" fetchpriority="high">
-        <figcaption>
-          <span>Figures oniriques</span>
-          <span>Attribution à confirmer</span>
-        </figcaption>
+        <figcaption><span>Figures oniriques</span><span>Une découverte de la collection</span></figcaption>
       </figure>
       <p class="hero-index" aria-hidden="true">01 / 06</p>
     </section>
 
-    <section class="collection section" id="collection" aria-labelledby="collection-title">
+    <section class="collection section" id="selection" aria-labelledby="selection-title">
       <header class="section-heading reveal">
-        <div>
-          <p class="eyebrow">Sélection privée · Automne 2026</p>
-          <h2 id="collection-title">Œuvres choisies</h2>
-        </div>
-        <p>Six pièces choisies pour la force de leur présence, entre œuvres graphiques, peinture, sculptures et textile.</p>
+        <div><p class="eyebrow">Le regard du moment</p><h2 id="selection-title">Œuvres choisies</h2></div>
+        <p>Six pièces parmi une collection plus vaste, réunies pour la force de leur présence, leur matière et les récits qu’elles suggèrent.</p>
       </header>
-
       <div class="art-grid">
         <article class="art-card reveal">
-          <button class="art-image" type="button" data-artwork="Figures oniriques" aria-label="Voir Figures oniriques en grand">
-            <img src="assets/collection/figures-oniriques-2026.jpg" alt="Composition encadrée aux figures surréalistes élancées dans des tons de bleu et de beige" loading="lazy" decoding="async">
-            <span class="view-mark" aria-hidden="true">Voir</span>
-          </button>
-          <div class="art-meta">
-            <div><h3>Figures oniriques</h3><p>Attribution à confirmer</p></div>
-            <div><p>Œuvre graphique sur papier</p><p>Dimensions à renseigner</p></div>
-          </div>
+          <button class="art-image" type="button" data-artwork="Figures oniriques" aria-label="Voir Figures oniriques en grand"><img src="assets/collection/figures-oniriques-2026.jpg" alt="Composition encadrée aux figures surréalistes élancées dans des tons de bleu et de beige" loading="lazy" decoding="async"><span class="view-mark" aria-hidden="true">Voir</span></button>
+          <div class="art-meta"><h3>Figures oniriques</h3><p>Œuvre graphique encadrée</p></div>
         </article>
-
         <article class="art-card reveal">
-          <button class="art-image" type="button" data-artwork="Pierrot" aria-label="Voir Pierrot en grand">
-            <img src="assets/collection/pierrot-2026.jpg" alt="Peinture représentant un personnage en costume rouge avec une grande collerette blanche" loading="lazy" decoding="async">
-            <span class="view-mark" aria-hidden="true">Voir</span>
-          </button>
-          <div class="art-meta">
-            <div><h3>Pierrot</h3><p>Attribution à confirmer</p></div>
-            <div><p>Peinture</p><p>Dimensions à renseigner</p></div>
-          </div>
+          <button class="art-image" type="button" data-artwork="Pierrot en rouge" aria-label="Voir Pierrot en rouge en grand"><img src="assets/collection/pierrot-2026.jpg" alt="Peinture représentant un personnage en costume rouge avec une grande collerette blanche" loading="lazy" decoding="async"><span class="view-mark" aria-hidden="true">Voir</span></button>
+          <div class="art-meta"><h3>Pierrot en rouge</h3><p>Peinture figurative</p></div>
         </article>
-
         <article class="art-card reveal">
-          <button class="art-image" type="button" data-artwork="Dragon polychrome" aria-label="Voir Dragon polychrome en grand">
-            <img src="assets/collection/dragon-2026.jpg" alt="Dragon sculpté aux couleurs vertes, bleues et rouges" loading="lazy" decoding="async">
-            <span class="view-mark" aria-hidden="true">Voir</span>
-          </button>
-          <div class="art-meta">
-            <div><h3>Dragon polychrome</h3><p>Attribution à confirmer</p></div>
-            <div><p>Sculpture polychrome</p><p>Dimensions à renseigner</p></div>
-          </div>
+          <button class="art-image" type="button" data-artwork="Dragon polychrome" aria-label="Voir Dragon polychrome en grand"><img src="assets/collection/dragon-2026.jpg" alt="Dragon sculpté aux couleurs vertes, bleues et rouges" loading="lazy" decoding="async"><span class="view-mark" aria-hidden="true">Voir</span></button>
+          <div class="art-meta"><h3>Dragon polychrome</h3><p>Sculpture polychrome</p></div>
         </article>
-
         <article class="art-card reveal">
-          <button class="art-image" type="button" data-artwork="Textile aux félins" aria-label="Voir Textile aux félins en grand">
-            <img src="assets/collection/textile-felins-2026.jpg" alt="Textile jaune à motifs tachetés, orné de deux félins et de fleurs, présenté dans un cadre sombre" loading="lazy" decoding="async">
-            <span class="view-mark" aria-hidden="true">Voir</span>
-          </button>
-          <div class="art-meta">
-            <div><h3>Textile aux félins</h3><p>Attribution à confirmer</p></div>
-            <div><p>Textile encadré</p><p>Dimensions à renseigner</p></div>
-          </div>
+          <button class="art-image" type="button" data-artwork="Textile aux félins" aria-label="Voir Textile aux félins en grand"><img src="assets/collection/textile-felins-2026.jpg" alt="Textile jaune à motifs tachetés, orné de deux félins et de fleurs, présenté dans un cadre sombre" loading="lazy" decoding="async"><span class="view-mark" aria-hidden="true">Voir</span></button>
+          <div class="art-meta"><h3>Textile aux félins</h3><p>Textile encadré</p></div>
         </article>
-
         <article class="art-card reveal">
-          <button class="art-image" type="button" data-artwork="Visage sculpté" aria-label="Voir Visage sculpté en grand">
-            <img src="assets/collection/visage-sculpte-2026.jpg" alt="Sculpture cylindrique à patine verte représentant un visage aux yeux expressifs" loading="lazy" decoding="async">
-            <span class="view-mark" aria-hidden="true">Voir</span>
-          </button>
-          <div class="art-meta">
-            <div><h3>Visage sculpté</h3><p>Attribution à confirmer</p></div>
-            <div><p>Sculpture</p><p>Dimensions à renseigner</p></div>
-          </div>
+          <button class="art-image" type="button" data-artwork="Visage sculpté" aria-label="Voir Visage sculpté en grand"><img src="assets/collection/visage-sculpte-2026.jpg" alt="Sculpture cylindrique à patine verte représentant un visage aux yeux expressifs" loading="lazy" decoding="async"><span class="view-mark" aria-hidden="true">Voir</span></button>
+          <div class="art-meta"><h3>Visage sculpté</h3><p>Sculpture patinée</p></div>
         </article>
-
         <article class="art-card reveal">
-          <button class="art-image" type="button" data-artwork="Composition argentée" aria-label="Voir Composition argentée en grand">
-            <img src="assets/collection/sculpture-argentee-2026.jpg" alt="Sculpture abstraite argentée aux formes courbes sur un socle clair" loading="lazy" decoding="async">
-            <span class="view-mark" aria-hidden="true">Voir</span>
-          </button>
-          <div class="art-meta">
-            <div><h3>Composition argentée</h3><p>Attribution à confirmer</p></div>
-            <div><p>Sculpture sur socle</p><p>Dimensions à renseigner</p></div>
-          </div>
+          <button class="art-image" type="button" data-artwork="Composition argentée" aria-label="Voir Composition argentée en grand"><img src="assets/collection/sculpture-argentee-2026.jpg" alt="Sculpture abstraite argentée aux formes courbes sur un socle clair" loading="lazy" decoding="async"><span class="view-mark" aria-hidden="true">Voir</span></button>
+          <div class="art-meta"><h3>Composition argentée</h3><p>Sculpture sur socle</p></div>
         </article>
       </div>
-      <p class="demo-note">Titres descriptifs. Attributions, techniques et dimensions à confirmer avant publication commerciale.</p>
+      <div class="section-action reveal"><a class="primary-button button-link" href="galerie.html">Voir toute la galerie <span aria-hidden="true">↗</span></a></div>
     </section>
 
-    <section class="about section" id="galerie" aria-labelledby="about-title">
-      <div class="about-mark reveal" aria-hidden="true">G<span>/</span>N</div>
+    <section class="about section" aria-labelledby="about-title">
+      <div class="about-mark reveal" aria-hidden="true">C<span>/</span>T</div>
       <div class="about-copy reveal">
-        <p class="eyebrow">La galerie</p>
-        <h2 id="about-title">L’art de trouver la pièce juste.</h2>
-        <p>Galerie [Nom] imagine une relation plus intime à l’art. Nous découvrons votre univers, votre espace et vos sensibilités pour composer une sélection sur mesure.</p>
-        <p>De la première conversation à l’accrochage, chaque choix est guidé avec exigence et discrétion.</p>
-        <a class="text-link light" href="#contact">Parler de votre recherche <span aria-hidden="true">↘</span></a>
+        <p class="eyebrow">Derrière le regard</p>
+        <h2 id="about-title">Une passion patinée par le temps.</h2>
+        <p>Depuis 30 ans, je cultive ma passion pour l’art et la restauration du patrimoine bâti. Chercheur de Trésor est né du désir de partager les œuvres et les détails qui retiennent mon regard.</p>
+        <a class="text-link light" href="a-propos.html">Découvrir mon parcours <span aria-hidden="true">↘</span></a>
       </div>
-      <ol class="services reveal" aria-label="Étapes de l’accompagnement">
-        <li><span>01</span><strong>Écoute</strong><small>Vos goûts, votre lieu, votre intention.</small></li>
-        <li><span>02</span><strong>Sélection</strong><small>Des propositions ciblées et documentées.</small></li>
-        <li><span>03</span><strong>Installation</strong><small>Un accompagnement jusqu’à l’accrochage.</small></li>
+      <ol class="services reveal" aria-label="Ce qui guide Chercheur de Trésor">
+        <li><span>01</span><strong>Observer</strong><small>Prendre le temps de voir la matière et le geste.</small></li>
+        <li><span>02</span><strong>Découvrir</strong><small>Faire dialoguer les œuvres, les objets et les lieux.</small></li>
+        <li><span>03</span><strong>Transmettre</strong><small>Partager ce qui mérite d’être regardé et préservé.</small></li>
       </ol>
     </section>
 
     <section class="contact section" id="contact" aria-labelledby="contact-title">
-      <p class="eyebrow reveal">Accompagnement privé</p>
-      <h2 id="contact-title" class="reveal">Quelle œuvre imaginez-vous chez vous&nbsp;?</h2>
-      <p class="reveal">Confiez-nous votre recherche. Nous préparerons une sélection pensée pour votre intérieur et votre sensibilité.</p>
-      <button class="primary-button reveal" type="button" data-open-contact>Demander une sélection personnalisée <span aria-hidden="true">↗</span></button>
+      <p class="eyebrow reveal">Échanger autour d’une découverte</p>
+      <h2 id="contact-title" class="reveal">Une œuvre, un objet ou un lieu vous intrigue&nbsp;?</h2>
+      <p class="reveal">Racontez-moi ce qui a retenu votre attention. Ce formulaire de démonstration n’envoie encore aucune donnée.</p>
+      <button class="primary-button reveal" type="button" data-open-contact>Me contacter <span aria-hidden="true">↗</span></button>
     </section>
   </main>
 
   <footer class="site-footer">
-    <a class="brand brand-footer" href="#accueil"><span>Galerie</span><strong>[Nom]</strong></a>
-    <p>Prototype de démonstration · Paris</p>
-    <div><a href="#collection">Sélection</a><a href="#galerie">Galerie</a><a href="#contact">Contact</a></div>
-    <p>© 2026 Galerie [Nom]</p>
+    <a class="brand brand-footer" href="index.html" aria-label="Chercheur de Trésor, accueil"><span class="brand-mark" aria-hidden="true">CT</span><span class="brand-name">Chercheur <strong>de Trésor</strong></span></a>
+    <p>Art &amp; patrimoine</p>
+    <div><a href="index.html">Accueil</a><a href="galerie.html">Galerie</a><a href="a-propos.html">À propos</a><a href="#contact">Contact</a></div>
+    <p>© 2026 Chercheur de Trésor</p>
   </footer>
 
   <dialog class="art-dialog" data-art-dialog aria-labelledby="art-dialog-title">
-    <button class="dialog-close" type="button" data-close-art aria-label="Fermer">×</button>
-    <img src="" alt="">
-    <p id="art-dialog-title"></p>
+    <button class="dialog-close" type="button" data-close-art aria-label="Fermer la visionneuse">×</button>
+    <img src="" alt=""><p id="art-dialog-title"></p>
   </dialog>
-
   <dialog class="contact-dialog" data-contact-dialog aria-labelledby="contact-dialog-title">
-    <button class="dialog-close" type="button" data-close-contact aria-label="Fermer">×</button>
-    <div class="dialog-intro">
-      <p class="eyebrow">Votre recherche</p>
-      <h2 id="contact-dialog-title">Commençons la conversation.</h2>
-      <p>Quelques mots suffisent pour nous permettre de préparer un premier échange.</p>
-    </div>
+    <button class="dialog-close" type="button" data-close-contact aria-label="Fermer le formulaire">×</button>
+    <div class="dialog-intro"><p class="eyebrow">Votre message</p><h2 id="contact-dialog-title">Commençons la conversation.</h2><p>Quelques mots suffisent pour partager une découverte, une question ou une envie.</p></div>
     <form data-contact-form>
       <label>Nom<input name="nom" autocomplete="name" required></label>
       <label>E-mail<input type="email" name="email" autocomplete="email" required></label>
-      <label>Votre projet<textarea name="projet" rows="4" placeholder="Une pièce pour un salon, un format, une palette…" required></textarea></label>
+      <label>Votre message<textarea name="message" rows="4" placeholder="Une œuvre, un objet, un détail de patrimoine…" required></textarea></label>
       <button class="primary-button" type="submit">Envoyer la demande <span aria-hidden="true">↗</span></button>
       <p class="form-note">Démonstration : ce formulaire n’envoie aucune donnée.</p>
       <p class="form-status" role="status" hidden></p>

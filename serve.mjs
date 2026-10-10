@@ -9,6 +9,12 @@ const types = {
   '.html': 'text/html; charset=utf-8',
   '.js': 'text/javascript; charset=utf-8',
   '.svg': 'image/svg+xml',
+  '.jpg': 'image/jpeg',
+  '.jpeg': 'image/jpeg',
+  '.png': 'image/png',
+  '.webp': 'image/webp',
+  '.gif': 'image/gif',
+  '.avif': 'image/avif',
 };
 
 createServer((request, response) => {
@@ -25,5 +31,5 @@ createServer((request, response) => {
   response.writeHead(200, { 'Content-Type': types[extname(filePath)] || 'application/octet-stream' });
   createReadStream(filePath).pipe(response);
 }).listen(port, '127.0.0.1', () => {
-  console.log(`Galerie [Nom] disponible sur http://127.0.0.1:${port}`);
+  console.log(`Chercheur de Trésor disponible sur http://127.0.0.1:${port}`);
 });

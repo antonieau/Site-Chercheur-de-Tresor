@@ -1,23 +1,32 @@
-# Galerie [Nom] — prototype
+# Chercheur de Trésor
 
-Prototype statique d’une galerie d’art contemporaine, en français.
+Site statique en français consacré à l’art, aux objets de découverte et à la restauration du patrimoine bâti. L’ensemble conserve une direction visuelle sobre et éditoriale, sur fond ivoire, avec une large place accordée aux photographies.
 
-## Lancer en local
+## Lancer le site en local
 
-Depuis ce dossier, démarrez un serveur statique :
+Depuis ce dossier :
 
 ```powershell
 node serve.mjs
 ```
 
-Puis ouvrez `http://localhost:4173`.
+Puis ouvrez `http://127.0.0.1:4173`.
 
-## Modifier le contenu
+## Pages
 
-- Textes, titres et informations des œuvres : `dist/index.html`
-- Couleurs, typographies et mise en page : `dist/styles.css`
-- Interactions et comportement du formulaire : `dist/script.js`
-- Images actuellement sélectionnées : `dist/assets/collection/`
-- Images sources disponibles : `images-arts/`
+- `dist/index.html` : accueil, sélection de six œuvres, présentation du projet et contact ;
+- `dist/galerie.html` : galerie complète avec visionneuse et navigation au clavier ;
+- `dist/a-propos.html` : présentation personnelle et portrait ;
+- `dist/styles.css` : styles communs et mises en page responsive ;
+- `dist/script.js` : menu mobile, animations, visionneuses et formulaire de démonstration.
 
-Pour remplacer une œuvre, conservez le même nom de fichier ou modifiez son chemin `src` dans `dist/index.html`.
+## Ajouter des photographies
+
+Les originaux restent dans `images-arts/`. Le serveur ne publie que `dist/`, il faut donc copier chaque photographie destinée au site dans `dist/assets/images-arts/`, puis ajouter son élément `<figure>` dans `dist/galerie.html` avec :
+
+- une légende descriptive sans attribution non vérifiée ;
+- un texte alternatif précis ;
+- `loading="lazy"` pour les images situées après le premier écran ;
+- un chemin correctement encodé si le nom du fichier contient des espaces (par exemple `%20`).
+
+Le portrait est réservé à `dist/a-propos.html`. Le formulaire de contact est une démonstration et n’envoie aucune donnée.
