@@ -94,7 +94,7 @@
     <section class="contact section" id="contact" aria-labelledby="contact-title">
       <p class="eyebrow reveal">Échanger autour d’une découverte</p>
       <h2 id="contact-title" class="reveal">Une œuvre, un objet ou un lieu vous intrigue&nbsp;?</h2>
-      <p class="reveal">Racontez-moi ce qui a retenu votre attention. Ce formulaire de démonstration n’envoie encore aucune donnée.</p>
+      <p class="reveal">Racontez-moi ce qui a retenu votre attention. Je vous répondrai directement par e-mail.</p>
       <button class="primary-button reveal" type="button" data-open-contact>Me contacter <span aria-hidden="true">↗</span></button>
     </section>
   </main>
@@ -113,13 +113,13 @@
   <dialog class="contact-dialog" data-contact-dialog aria-labelledby="contact-dialog-title">
     <button class="dialog-close" type="button" data-close-contact aria-label="Fermer le formulaire">×</button>
     <div class="dialog-intro"><p class="eyebrow">Votre message</p><h2 id="contact-dialog-title">Commençons la conversation.</h2><p>Quelques mots suffisent pour partager une découverte, une question ou une envie.</p></div>
-    <form data-contact-form>
+    <form data-contact-form action="https://formspree.io/f/mvkzqnbk" method="POST">
+      <input type="hidden" name="subject" value="Nouveau message depuis Chercheur de Trésor">
       <label>Nom<input name="nom" autocomplete="name" required></label>
       <label>E-mail<input type="email" name="email" autocomplete="email" required></label>
       <label>Votre message<textarea name="message" rows="4" placeholder="Une œuvre, un objet, un détail de patrimoine…" required></textarea></label>
       <button class="primary-button" type="submit">Envoyer la demande <span aria-hidden="true">↗</span></button>
-      <p class="form-note">Démonstration : ce formulaire n’envoie aucune donnée.</p>
-      <p class="form-status" role="status" hidden></p>
+      <p class="form-note">Vos coordonnées seront uniquement utilisées pour vous répondre.</p>
     </form>
   </dialog>
 </body>

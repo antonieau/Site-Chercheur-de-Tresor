@@ -84,12 +84,6 @@ if (contactDialog && contactButton) {
     if (event.target === contactDialog) closeDialog(contactDialog);
   });
   contactDialog.addEventListener('close', () => setDialogState(false));
-  contactDialog.querySelector('[data-contact-form]')?.addEventListener('submit', (event) => {
-    event.preventDefault();
-    const status = event.currentTarget.querySelector('.form-status');
-    status.hidden = false;
-    status.textContent = 'Merci. Ceci est une démonstration : votre message n’a pas été envoyé.';
-  });
 }
 
 const galleryDialog = document.querySelector('[data-gallery-dialog]');
